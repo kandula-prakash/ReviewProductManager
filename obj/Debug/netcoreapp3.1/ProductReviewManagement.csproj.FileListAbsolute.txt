@@ -1,0 +1,13 @@
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.csproj.AssemblyReference.cache
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.AssemblyInfoInputs.cache
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.AssemblyInfo.cs
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.csproj.CoreCompileInputs.cache
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.exe
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.deps.json
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.runtimeconfig.json
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.runtimeconfig.dev.json
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.dll
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\bin\Debug\netcoreapp3.1\ProductReviewManagement.pdb
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.dll
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.pdb
+C:\Users\prakash kandula\source\repos\ProductReviewManagement\ProductReviewManagement\obj\Debug\netcoreapp3.1\ProductReviewManagement.genruntimeconfig.cache
