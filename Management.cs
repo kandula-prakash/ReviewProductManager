@@ -79,13 +79,35 @@ namespace ProductReview
 
             DisplayRecords(recordedData);
         }
-        // uc-8
+        // uc-7
         public void DisplayDataTable_WithIsLikeValueTrue(DataTable table)
         {
             var records = from products in table.AsEnumerable().Where(x => x["isLike"].Equals(true)) select products;
 
             Console.WriteLine("\nRetrieve all records from DataTable:");
             DisplayRecords(records);
+        }
+        //uc8
+        public void FindAverageRating(DataTable table)
+        {
+            var records = table.Rows
+                          .Cast<DataRow>()
+                          .GroupBy(x => x.Field<int>("ProductID"))
+                          .Select(x => new
+                          {
+                              ProductID = x.Key,
+                              Average = x.Average(x => x.Field<int>("Rating"))
+                          }).ToList();
+
+            Console.WriteLine("\nAverage rating for each Product ID:");
+            Console.WriteLine($"{new string('-', 30)}");
+            Console.WriteLine($"| {"ProductID",13} | {"Average",10} |");
+            Console.WriteLine($"{new string('-', 30)}");
+            foreach (var list in records)
+            {
+                Console.WriteLine($"| {list.ProductID,13} | {Math.Round(list.Average, 2),10} |");
+            }
+            Console.WriteLine($"{new string('-', 30)}");
         }
     }
 }
