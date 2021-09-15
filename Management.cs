@@ -21,6 +21,14 @@ namespace ProductReview
             }
             Console.WriteLine($"{new string('-', 70)}\n");
         }
-
+        // uc-2
+        public void TopRecords(List<ProductReview> listProductReview)
+        {
+            Console.WriteLine("\nTop 3 records: ");
+            var recordedData = (from productReviews in listProductReview
+                                orderby productReviews.Rating descending
+                                select productReviews).Take(3);
+            DisplayRecords(recordedData);
+        }
     }
 }
