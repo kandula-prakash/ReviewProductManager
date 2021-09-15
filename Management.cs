@@ -41,6 +41,7 @@ namespace ProductReview
                                select productReviews;
             DisplayRecords((EnumerableRowCollection<DataRow>)recordedData);
         }
+        //uc4
         public void RetrieveCountOfRecords(List<ProductReview> listProductReview)
         {
             var recordedData = listProductReview.GroupBy(y => y.ProducID).Select(x => new { ProductID = x.Key, Count = x.Count() });
@@ -52,6 +53,21 @@ namespace ProductReview
             foreach (var list in recordedData)
             {
                 Console.WriteLine($"| {list.ProductID,13} | {list.Count,10} |");
+            }
+            Console.WriteLine($"{new string('-', 30)}");
+        }
+        //uc5
+        public void RetrieveIDAndReview(List<ProductReview> listProductReview)
+        {
+            var recordedData = listProductReview.Select(x => new { ProductID = x.ProducID, ProductReview = x.Review });
+
+            Console.WriteLine("\nReviews for each product:");
+            Console.WriteLine($"{new string('-', 30)}");
+            Console.WriteLine($"| {"ProductID",13} | {"Review",10} |");
+            Console.WriteLine($"{new string('-', 30)}");
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine($"| {list.ProductID,13} | {list.ProductReview,10} |");
             }
             Console.WriteLine($"{new string('-', 30)}");
         }
