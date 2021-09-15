@@ -79,6 +79,14 @@ namespace ProductReview
 
             DisplayRecords(recordedData);
         }
+        // uc-8
+        public void DisplayDataTable_WithIsLikeValueTrue(DataTable table)
+        {
+            var records = from products in table.AsEnumerable().Where(x => x["isLike"].Equals(true)) select products;
+
+            Console.WriteLine("\nRetrieve all records from DataTable:");
+            DisplayRecords(records);
+        }
     }
 }
 
